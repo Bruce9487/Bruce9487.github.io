@@ -8,7 +8,6 @@
 			function didPhotoUpload(returnObject, contentObject) {
 				alert(returnObject['returnCode'] + ':' + returnObject['returnMessage'] + ':' + contentObject['deviceType'])
 			}
-
 			function doPhotoUpload() {
 				// ****請提供上傳欄位
 				var photoInfo = {userName:"John", userAge:"25", gender:"male"};
@@ -18,16 +17,14 @@
 				};
 				callNativeDevice('photoUpload',message)
 			}
-
 			// Line Share
 			function doLineShare() {
-				var param = {'123456789'};
+				var param = {url:"https://store.line.me/home/zh-Hant"};
 				var message = {
 					'content' : param
 				};
 				callNativeDevice('lineShare',message)
 			}
-
 			// Open Another Link
 			function doOpenAnotherLink() {
 				var message = {
@@ -35,7 +32,6 @@
 				};
 				callNativeDevice('openAnotherLink',message)
 			}
-
 		</script>
 	</head>
 	
